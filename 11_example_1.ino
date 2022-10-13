@@ -10,7 +10,7 @@
 #define SND_VEL 346.0     // sound velocity at 24 celsius degree (unit: m/sec)
 #define INTERVAL 25      // sampling interval (unit: msec)
 #define PULSE_DURATION 10 // ultra-sound Pulse Duration (unit: usec)
-#define _DIST_MIN 0.0   // minimum distance to be measured (unit: mm)
+#define _DIST_MIN 180.0   // minimum distance to be measured (unit: mm)
 #define _DIST_MAX 360.0   // maximum distance to be measured (unit: mm)
 
 #define TIMEOUT ((INTERVAL / 2) * 1000.0) // maximum echo waiting time (unit: usec)
