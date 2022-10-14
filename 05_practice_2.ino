@@ -6,12 +6,15 @@ void setup() {
   Serial.begin(115200); // Initialize serial port
   count = 0;
   toggle = 1;
+  digitalWrite(PIN_LED, toggle);
+  count += 1;
+  Serial.println(count);
   delay(1000); // wait for 1000 milliseconds
 }
 
 void loop() {
   while(1) {
-    if (count == 12) {
+    if (count == 11) {
       break;
     }
     toggle = toggle_state(toggle); //toggle LED value.
